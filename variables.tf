@@ -1,5 +1,5 @@
 variable "namespace" {
-  description = "(Optional) The namespace to install the release into. Defaults to default"
+  description = "(Optional) The namespace to install the release into."
   type        = string
   default     = "default"
 }

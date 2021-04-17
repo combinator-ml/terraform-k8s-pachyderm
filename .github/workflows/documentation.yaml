@@ -13,3 +13,4 @@ jobs:
       with:
         working-dir: .
         git-push: "true"
+        config-file: .terraform-docs.yml

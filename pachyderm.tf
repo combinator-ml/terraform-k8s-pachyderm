@@ -8,9 +8,9 @@ terraform {
 }
 
 resource "helm_release" "pachyderm" {
-  name = "pachyderm"
+  name             = "pachyderm"
   repository       = "https://pachyderm.github.io/helmchart/"
-  chart      = "pachyderm"
+  chart            = "pachyderm"
   version          = "0.4.1"
   namespace        = var.namespace
   wait             = true

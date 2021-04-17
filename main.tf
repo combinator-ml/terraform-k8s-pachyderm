@@ -1,3 +1,9 @@
+/**
+ * # Kubernetes - Pachyderm
+ *
+ * This module installs Pachyderm on Kubernetes, via Helm.
+ */
+
 terraform {
   required_providers {
     provider = {

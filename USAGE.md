@@ -1,6 +1,10 @@
 # Usage
 
 <!--- BEGIN_TF_DOCS --->
+# Kubernetes - Pachyderm
+
+This module installs Pachyderm on Kubernetes, via Helm.
+
 ## Requirements
 
 | Name | Version |
@@ -27,7 +31,7 @@ No Modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| namespace | (Optional) The namespace to install the release into. Defaults to default | `string` | `"default"` | no |
+| namespace | (Optional) The namespace to install the release into. | `string` | `"default"` | no |
 | values | (Optional) List of values in raw yaml to pass to helm. See https://github.com/pachyderm/helmchart/blob/master/pachyderm/values.yaml. | `list(string)` | <pre>[<br>  "tls:\n  certName: null # Disable TLS\n  create: null # Disable TLS\npachd:\n  logLevel: debug\n  storage:\n    backend: LOCAL\n"<br>]</pre> | no |
 
 ## Outputs

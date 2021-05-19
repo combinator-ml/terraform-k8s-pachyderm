@@ -15,6 +15,6 @@ pachd:
   logLevel: debug
   storage:
     backend: LOCAL
-EOT 
+EOT
   ]
 }

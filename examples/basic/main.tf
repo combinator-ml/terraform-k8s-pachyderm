@@ -1,3 +1,3 @@
 module "pachyderm" {
-  source = "../"
+  source = "combinator-ml/pachyderm/k8s"
 }

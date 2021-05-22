@@ -1,7 +1,7 @@
 variable "namespace" {
   description = "(Optional) The namespace to install the release into."
   type        = string
-  default     = "default"
+  default     = "pachyderm"
 }
 
 variable "values" {

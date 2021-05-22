@@ -30,7 +30,12 @@ resource "kubernetes_service" "pachyderm-dash" {
     port {
       port        = 8080
       target_port = 8080
-      node_port   = 30600
+      node_port   = 30080
+    }
+    port {
+      port        = 8081
+      target_port = 8081
+      node_port   = 30081
     }
     type = "NodePort"
   }

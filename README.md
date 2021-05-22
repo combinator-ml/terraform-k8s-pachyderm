@@ -67,7 +67,7 @@ No Modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| namespace | (Optional) The namespace to install the release into. | `string` | `"default"` | no |
+| namespace | (Optional) The namespace to install the release into. | `string` | `"pachyderm"` | no |
 | values | (Optional) List of values in raw yaml to pass to helm. See https://github.com/pachyderm/helmchart/blob/master/pachyderm/values.yaml. | `list(string)` | <pre>[<br>  "tls:\n  certName: null # Disable TLS\n  create: null # Disable TLS\npachd:\n  logLevel: debug\n  storage:\n    backend: LOCAL\n"<br>]</pre> | no |
 
 ## Outputs

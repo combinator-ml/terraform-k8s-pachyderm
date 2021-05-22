@@ -63,7 +63,7 @@ launch:
   title: Pachyderm
   buttons:
     - title: Pachyderm Dash
-      port: 30600
+      port: 30080
   homepage: |
     ### Pachyderm
 

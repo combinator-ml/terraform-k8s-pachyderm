@@ -28,11 +28,13 @@ resource "kubernetes_service" "pachyderm-dash" {
       app = "dash"
     }
     port {
+      name        = "http"
       port        = 8080
       target_port = 8080
       node_port   = 30080
     }
     port {
+      name        = "grpc"
       port        = 8081
       target_port = 8081
       node_port   = 30081

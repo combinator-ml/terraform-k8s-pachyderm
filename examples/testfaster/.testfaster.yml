@@ -4,6 +4,7 @@ base:
   os_dockerfile: |-
     # This dockerfile defines the base disk image for your VMs
     FROM quay.io/testfaster/kube-ubuntu
+    ENV cache-bust 1
     RUN apt update
     RUN apt install gnupg2 software-properties-common rsync -y
     RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
@@ -58,6 +59,7 @@ max_pool_size: 16
 # short-lived CI.
 default_lease_timeout: "1h"
 pool_sleep_timeout: "7d"
+shared: true
 
 launch:
   title: Pachyderm

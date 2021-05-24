@@ -5,7 +5,7 @@ variable "namespace" {
 }
 
 locals {
-  prefix = "testfaster"
+  prefix           = "testfaster"
   create_namespace = var.namespace == "default" ? 0 : 1 # Create if not default
 }
 

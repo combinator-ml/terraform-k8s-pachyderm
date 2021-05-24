@@ -64,9 +64,14 @@ shared: true
 launch:
   title: Pachyderm
   buttons:
-    - title: Pachyderm Dash
+    - title: Launch Jupyter
+      port: 30600
+    - title: Launch Pachyderm Enterprise Dashboard
       port: 30080
   homepage: |
-    ### Pachyderm
+    # Quick Start Pachyderm
 
-    The testfaster tutorial has not yet been developed. Contribute to https://github.com/combinator-ml/terraform-k8s-pachyderm
+    Click the two links to the left to get started with Pachyderm:
+
+    1. Click the Jupyter link and launch the `demo.ipynb` notebook. 
+    2. Click on the Dashboard link to launch the Pachyderm Enterprise Dashboard.

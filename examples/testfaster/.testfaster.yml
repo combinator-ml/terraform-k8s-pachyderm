@@ -66,7 +66,7 @@ launch:
   buttons:
     - title: Launch Jupyter
       port: 30600
-    - title: Launch Pachyderm Enterprise Dashboard
+    - title: Launch Pachyderm UI
       port: 30080
   homepage: |
     # Quick Start Pachyderm

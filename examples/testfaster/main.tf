@@ -17,8 +17,7 @@ resource "kubernetes_namespace" "namespace" {
 }
 
 module "pachyderm" {
-  source    = "combinator-ml/pachyderm/k8s"
-  version   = "0.0.3"
+  source    = "../.."
   namespace = var.namespace
   depends_on = [
     kubernetes_namespace.namespace

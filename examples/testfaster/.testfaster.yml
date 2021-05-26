@@ -39,7 +39,7 @@ base:
     set -euo pipefail
     git clone https://github.com/combinator-ml/terraform-k8s-pachyderm repo
     cd repo
-    git checkout 269b11aae63958d2f7fc164d2105533502f0ff77
+    git checkout 332e6f7bdba13df1663ce877704dcb642c93c3fa
     cd examples/testfaster
     terraform init
     KUBE_CONFIG_PATH=~/.kube/config terraform apply -auto-approve

@@ -1,7 +1,7 @@
 name: terraform
 on: push
 env:
-  TF_CHDIR: -chdir=examples/basic
+  TF_CHDIR: -chdir=examples/test
 jobs:
   tests:
     name: test
